@@ -1,0 +1,24 @@
+<app-generic-list [lists]="games">
+    <ng-container vacio>
+        <div>
+            Yo sup bro
+        </div>
+    </ng-container>
+    <ng-container contenido>
+        <div *ngFor="let game of games; let index = index" class="game-container">
+            <div>
+                Game id = {{index}}
+                <button style="margin-left: 1rem;" (click)="removeGame(index)" >Remove</button>
+            </div>
+            <div>
+                {{game.name}}
+            </div>
+            <div>
+                {{game.release | date:"dd-MMMM-yy" | uppercase}}
+            </div>
+            <div>
+                {{game.price | currency }}
+            </div>
+        </div>
+    </ng-container>
+</app-generic-list>
