@@ -1,1 +1,7 @@
- 
+<mat-icon *ngFor="let i of maximoRatingArr; let index = index"
+(mouseenter)="mouseIn(index)"
+(mouseleave)="mouseOut()"
+(click)="rate(index)"
+[ngClass]="{checked: ratingSelect > index}">
+    https
+</mat-icon>

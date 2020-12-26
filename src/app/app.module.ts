@@ -9,7 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule} from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilities/rating/rating.component';
-import { GamesListComponent } from './games/games-list/games-list.component'
+import { GamesListComponent } from './games/games-list/games-list.component';
+import { Ts1Component } from './testing/ts1/ts1.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GamesListComponent } from './games/games-list/games-list.component'
     GenericListComponent,
     MenuComponent,
     RatingComponent,
-    GamesListComponent
+    GamesListComponent,
+    Ts1Component
   ],
   imports: [
     BrowserModule,
